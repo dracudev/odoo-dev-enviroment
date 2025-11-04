@@ -136,7 +136,7 @@ All settings are accessible directly from the Odoo Website Builder:
 
 ### File Structure
 
-```
+```tree
 website_brand_carousel/
 ├── __init__.py
 ├── __manifest__.py
@@ -216,7 +216,7 @@ This module is distributed under the GNU Lesser General Public License v3.0 (LGP
 - **You can use it in proprietary software** as long as you comply with the LGPL terms
 - **Any modifications** must also be licensed under LGPL-3 or compatible license
 
-For full license details, see: https://www.gnu.org/licenses/lgpl-3.0.en.html
+For full license details, see: <https://www.gnu.org/licenses/lgpl-3.0.en.html>
 
 ## Support
 
