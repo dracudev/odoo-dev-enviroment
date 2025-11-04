@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Brand Carousel Options -->
+    <template id="snippet_options_brand_carousel" inherit_id="website.snippet_options" name="Brand Carousel Options">
+        <xpath expr="." position="inside">
+            <!-- Main Brand Carousel Options -->
+            <div data-selector=".s_brand_carousel">
+                
+                <!-- Animation Speed Option -->
+                <we-select string="Animation Speed" data-attribute-name="animationSpeed">
+                    <we-button data-select-data-attribute="10">Very Fast</we-button>
+                    <we-button data-select-data-attribute="20">Fast</we-button>
+                    <we-button data-select-data-attribute="30">Normal</we-button>
+                    <we-button data-select-data-attribute="40">Slow</we-button>
+                    <we-button data-select-data-attribute="60">Very Slow</we-button>
+                </we-select>
+
+                <!-- Logo Height Option -->
+                <we-select string="Logo Height" data-attribute-name="logoHeight">
+                    <we-button data-select-data-attribute="40">Small (40px)</we-button>
+                    <we-button data-select-data-attribute="60">Medium (60px)</we-button>
+                    <we-button data-select-data-attribute="80">Large (80px)</we-button>
+                    <we-button data-select-data-attribute="100">Extra Large (100px)</we-button>
+                    <we-button data-select-data-attribute="120">Huge (120px)</we-button>
+                </we-select>
+
+                <!-- Logo Spacing Option -->
+                <we-select string="Logo Spacing" data-attribute-name="logoSpacing">
+                    <we-button data-select-data-attribute="20">Tight (20px)</we-button>
+                    <we-button data-select-data-attribute="40">Normal (40px)</we-button>
+                    <we-button data-select-data-attribute="60">Comfortable (60px)</we-button>
+                    <we-button data-select-data-attribute="80">Spacious (80px)</we-button>
+                    <we-button data-select-data-attribute="100">Very Spacious (100px)</we-button>
+                </we-select>
+
+                <!-- Grayscale Filter Option -->
+                <we-checkbox string="Grayscale Logos" data-select-data-attribute="false|true" data-attribute-name="grayscale"/>
+                
+                <!-- Hover Pause Option -->
+                <we-checkbox string="Pause on Hover" data-select-data-attribute="false|true" data-attribute-name="pauseOnHover"/>
+
+                <!-- Background Options -->
+                <we-select string="Background Style">
+                    <we-button data-select-class="">None</we-button>
+                    <we-button data-select-class="bg-light">Light</we-button>
+                    <we-button data-select-class="bg-dark">Dark</we-button>
+                    <we-button data-select-class="bg-primary">Primary Color</we-button>
+                    <we-button data-select-class="bg-secondary">Secondary Color</we-button>
+                </we-select>
+
+            </div>
+
+            <!-- Individual Brand Item Options -->
+            <div data-selector=".s_brand_carousel .brand-item">
+                <we-button class="fa fa-clone oe_snippet_clone" title="Duplicate" aria-label="Duplicate"/>
+                <we-button class="fa fa-trash-o oe_snippet_remove" title="Remove" aria-label="Remove"/>
+            </div>
+
+        </xpath>
+    </template>
+</odoo>

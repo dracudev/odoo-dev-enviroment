@@ -1,0 +1,135 @@
+// Brand Carousel Styles
+.s_brand_carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  .brand-carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent
+    );
+  }
+
+  .brand-carousel-track {
+    display: flex;
+    align-items: center;
+    animation: scroll-infinite 30s linear infinite;
+    width: max-content;
+    will-change: transform;
+  }
+
+  .brand-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 0 30px;
+    transition: all 0.3s ease;
+
+    img.brand-logo {
+      height: 80px;
+      width: auto;
+      max-width: 200px;
+      object-fit: contain;
+      display: block;
+      transition: all 0.3s ease;
+      filter: grayscale(0%);
+      opacity: 0.8;
+
+      &:hover {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  // Grayscale variant
+  &[data-grayscale='true'] {
+    .brand-item img.brand-logo {
+      filter: grayscale(100%);
+
+      &:hover {
+        filter: grayscale(0%);
+      }
+    }
+  }
+
+  // Dark background variant
+  &.bg-dark {
+    .brand-item img.brand-logo {
+      filter: brightness(0) invert(1);
+
+      &:hover {
+        filter: brightness(0) invert(1);
+        opacity: 0.8;
+      }
+    }
+
+    &[data-grayscale='true'] {
+      .brand-item img.brand-logo {
+        filter: brightness(0) invert(1) grayscale(100%);
+
+        &:hover {
+          filter: brightness(0) invert(1) grayscale(0%);
+        }
+      }
+    }
+  }
+
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    .brand-item {
+      padding: 0 20px;
+
+      img.brand-logo {
+        height: 60px;
+        max-width: 150px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .brand-item {
+      padding: 0 15px;
+
+      img.brand-logo {
+        height: 50px;
+        max-width: 120px;
+      }
+    }
+  }
+}
+
+// Animation keyframes
+@keyframes scroll-infinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+// Edit mode styling - disable animation when editing
+.o_we_website_top_actions .s_brand_carousel .brand-carousel-track {
+  animation: none !important;
+}

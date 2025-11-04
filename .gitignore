@@ -20,6 +20,7 @@ ENV/
 
 # IDE
 .vscode/
+.agent.md
 .idea/
 *.swp
 *.swo

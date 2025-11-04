@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Brand Carousel Snippet Template -->
+    <template id="s_brand_carousel" name="Brand Carousel">
+        <section class="s_brand_carousel pt-5 pb-5" 
+                 data-name="Brand Carousel"
+                 data-animationSpeed="30"
+                 data-logoHeight="80"
+                 data-logoSpacing="60"
+                 data-grayscale="false"
+                 data-pauseOnHover="false">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="brand-carousel-wrapper">
+                            <div class="brand-carousel-track">
+                                <!-- Default brands - users can add/remove these -->
+                                <div class="brand-item">
+                                    <img src="/website_brand_carousel/static/src/img/placeholder-logo.svg" 
+                                         alt="Brand 1" 
+                                         class="brand-logo"/>
+                                </div>
+                                <div class="brand-item">
+                                    <img src="/website_brand_carousel/static/src/img/placeholder-logo.svg" 
+                                         alt="Brand 2" 
+                                         class="brand-logo"/>
+                                </div>
+                                <div class="brand-item">
+                                    <img src="/website_brand_carousel/static/src/img/placeholder-logo.svg" 
+                                         alt="Brand 3" 
+                                         class="brand-logo"/>
+                                </div>
+                                <div class="brand-item">
+                                    <img src="/website_brand_carousel/static/src/img/placeholder-logo.svg" 
+                                         alt="Brand 4" 
+                                         class="brand-logo"/>
+                                </div>
+                                <div class="brand-item">
+                                    <img src="/website_brand_carousel/static/src/img/placeholder-logo.svg" 
+                                         alt="Brand 5" 
+                                         class="brand-logo"/>
+                                </div>
+                                <div class="brand-item">
+                                    <img src="/website_brand_carousel/static/src/img/placeholder-logo.svg" 
+                                         alt="Brand 6" 
+                                         class="brand-logo"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Add snippet to the Website Builder -->
+    <template id="brand_carousel_snippet" inherit_id="website.snippets" name="Brand Carousel Snippet">
+        <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+            <t t-snippet="website_brand_carousel.s_brand_carousel" 
+               string="Brand Carousel" 
+               group="content"
+               t-thumbnail="/website_brand_carousel/static/src/img/snippet_thumbnail.svg">
+                <keywords>brand, logo, carousel, slider, partner, client, infinite, scroll, company, sponsor</keywords>
+            </t>
+        </xpath>
+    </template>
+</odoo>

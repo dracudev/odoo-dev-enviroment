@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+  <rect width="200" height="100" fill="#f0f0f0"/>
+  <text x="100" y="50" font-family="Arial, sans-serif" font-size="14" fill="#999" text-anchor="middle" dominant-baseline="middle">
+    Your Logo
+  </text>
+  <circle cx="100" cy="30" r="8" fill="#ddd"/>
+  <rect x="60" y="60" width="80" height="8" rx="4" fill="#ddd"/>
+  <rect x="75" y="73" width="50" height="6" rx="3" fill="#e5e5e5"/>
+</svg>

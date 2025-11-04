@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#e8f4f8"/>
+  
+  <!-- Background Pattern -->
+  <rect x="20" y="80" width="216" height="96" rx="8" fill="#fff" stroke="#d0e7f2" stroke-width="2"/>
+  
+  <!-- Logo Placeholders -->
+  <g opacity="0.6">
+    <rect x="40" y="100" width="40" height="20" rx="2" fill="#b8dce8"/>
+    <rect x="95" y="100" width="40" height="20" rx="2" fill="#b8dce8"/>
+    <rect x="150" y="100" width="40" height="20" rx="2" fill="#b8dce8"/>
+    
+    <rect x="40" y="135" width="40" height="20" rx="2" fill="#b8dce8"/>
+    <rect x="95" y="135" width="40" height="20" rx="2" fill="#b8dce8"/>
+    <rect x="150" y="135" width="40" height="20" rx="2" fill="#b8dce8"/>
+  </g>
+  
+  <!-- Arrow Indicating Motion -->
+  <g transform="translate(200, 120)">
+    <path d="M0,0 L15,8 L0,16 Z" fill="#4a90a4"/>
+    <line x1="-20" y1="8" x2="0" y2="8" stroke="#4a90a4" stroke-width="2"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="128" y="45" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2c5f6f" text-anchor="middle">
+    Brand Carousel
+  </text>
+  <text x="128" y="63" font-family="Arial, sans-serif" font-size="11" fill="#6b9aaa" text-anchor="middle">
+    Infinite Logo Slider
+  </text>
+  
+  <!-- Decorative Lines -->
+  <line x1="30" y1="195" x2="226" y2="195" stroke="#d0e7f2" stroke-width="2" stroke-dasharray="4,4"/>
+</svg>
